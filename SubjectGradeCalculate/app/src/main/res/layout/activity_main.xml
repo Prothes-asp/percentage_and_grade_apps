@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subject Grade Calculate"
+            android:textColor="#FFEB3B"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/title_bg"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note : Please enter all subject marks in the input field"
+            android:textColor="#FFEB3B"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="50dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <EditText
+                android:id="@+id/edPhysics"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Physics"
+                android:layout_weight="1"
+                android:textColorHint="#51FFFFFF"
+                android:paddingHorizontal="10dp"
+                android:gravity="center"
+                android:background="@drawable/strock_bg"
+                android:inputType="number"
+                android:maxLength="3"
+                android:layout_marginRight="8dp"
+                android:textColor="#4CAF50"
+                />
+            <EditText
+                android:id="@+id/edChemistry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Chemistry"
+                android:layout_weight="1"
+                android:textColorHint="#51FFFFFF"
+                android:paddingHorizontal="10dp"
+                android:gravity="center"
+                android:background="@drawable/strock_bg"
+                android:inputType="number"
+                android:maxLength="3"
+                android:layout_marginLeft="8dp"
+                android:textColor="#4CAF50"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <EditText
+                android:id="@+id/edBiology"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Biology"
+                android:layout_weight="1"
+                android:textColorHint="#51FFFFFF"
+                android:paddingHorizontal="10dp"
+                android:gravity="center"
+                android:background="@drawable/strock_bg"
+                android:inputType="number"
+                android:maxLength="3"
+                android:layout_marginRight="8dp"
+                android:textColor="#4CAF50"
+                />
+            <EditText
+                android:id="@+id/edMath"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Math"
+                android:layout_weight="1"
+                android:textColorHint="#51FFFFFF"
+                android:paddingHorizontal="10dp"
+                android:gravity="center"
+                android:background="@drawable/strock_bg"
+                android:inputType="number"
+                android:maxLength="3"
+                android:layout_marginLeft="8dp"
+                android:textColor="#4CAF50"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edComputer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Computer"
+            android:textColorHint="#51FFFFFF"
+            android:paddingHorizontal="10dp"
+            android:gravity="center"
+            android:background="@drawable/strock_bg"
+            android:inputType="number"
+            android:maxLength="3"
+            android:layout_marginBottom="10dp"
+            android:textColor="#4CAF50"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_ripple_effect"
+            android:text="Calculate"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:id="@+id/btn"
+            android:layout_marginVertical="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/result_bg"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="#4CAF50"
+            android:hint="Result Display"
+            android:textColorHint="#3EFFFFFF"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_ripple_effect"
+            android:text="Reset All"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:id="@+id/resetBtn"
+            android:layout_marginTop="30dp"
+            />
+
+
+    </LinearLayout>
+</ScrollView>
